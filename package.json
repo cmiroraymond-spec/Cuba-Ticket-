@@ -1,0 +1,20 @@
+{
+  "name": "cuba-ticket-app",
+  "version": "1.0.0",
+  "description": "Electron webview app for Cuba-Ticket",
+  "main": "src/main.js",
+  "author": "cmiroraymond-spec",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev": "electron . --dev"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest"
+  }
+}
