@@ -1,8 +1,35 @@
-# Cuba-Ticket Electron App
+# Cuba-Ticket Android App
 
-Aplicación de escritorio Electron que carga la página web de Cuba-Ticket como webview.
+Aplicación Android nativa que carga **https://cuba-ticket.free.nf** como WebView.
 
-## Instalación
+## 🚀 Descarga la APK
+
+### Opción 1: Desde Releases (Automático)
+1. Ve a: https://github.com/cmiroraymond-spec/Cuba-Ticket-/releases
+2. Descarga el archivo `.apk` más reciente
+3. Instala en tu dispositivo Android
+
+### Opción 2: Desde Actions
+1. Ve a: https://github.com/cmiroraymond-spec/Cuba-Ticket-/actions
+2. Haz clic en la compilación más reciente
+3. Descarga en **Artifacts**
+
+## 📋 Requisitos
+
+- Android 5.0+ (API 21)
+- Conexión a Internet
+- 15 MB de espacio libre
+
+## 📱 Características
+
+✅ WebView nativo integrado  
+✅ Carga https://cuba-ticket.free.nf  
+✅ Soporte para JavaScript  
+✅ Almacenamiento local habilitado  
+✅ Diseño responsivo  
+✅ Botón atrás funcional  
+
+## 🔧 Compilación Local
 
 1. Clona el repositorio:
 ```bash
@@ -10,27 +37,33 @@ git clone https://github.com/cmiroraymond-spec/Cuba-Ticket-.git
 cd Cuba-Ticket-
 ```
 
-2. Instala las dependencias:
-```bash
-npm install
+2. Abre en Android Studio:
+   - File → Open → Selecciona la carpeta `android/`
+
+3. Compila:
+   - Build → Build Bundle(s) / APK(s) → Build APK(s)
+
+4. La APK estará en:
+```
+android/app/build/outputs/apk/release/app-release.apk
 ```
 
-3. Ejecuta la aplicación:
-```bash
-npm start
-```
+## 🤖 Compilación Automática
 
-## Comandos disponibles
+Cada vez que haces **push** a `main`, GitHub Actions compila automáticamente:
+- ✅ Genera iconos con tema Cuba
+- ✅ Compila la APK
+- ✅ Crea un Release
+- ✅ Sube descargables
 
-- `npm start` - Inicia la aplicación
-- `npm run dev` - Inicia con modo desarrollo
-- `npm run build` - Compila la aplicación para distribución
+## 🇨🇺 URL de la Aplicación
 
-## URL de la aplicación
+La app carga automáticamente: **https://cuba-ticket.free.nf**
 
-La app carga automáticamente: https://cuba-ticket.free.nf
+## 📞 Soporte
 
-## Requisitos
+Para reportar errores o solicitar funciones, abre un issue en el repositorio.
 
-- Node.js 14+
-- npm o yarn
+---
+
+**Desarrollado con ❤️ para Cuba Ticket**
