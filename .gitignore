@@ -1,9 +1,12 @@
 node_modules/
 dist/
-out/
-.DS_Store
 *.log
-*.swp
-.env
-.vscode/
+.DS_Store
+out/
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
+.env.local
+.env.*.local

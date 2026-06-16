@@ -1,0 +1,41 @@
+appId: com.cubateam.cubaticket
+productName: Cuba Ticket
+directories:
+  buildResources: assets
+files:
+  - from: .
+    to: .
+    filter:
+      - '!node_modules'
+      - '!dist'
+      - '!*.md'
+      - '!.git'
+      - '!.gitignore'
+
+win:
+  target:
+    - nsis
+    - portable
+  certificateFile: null
+  certificatePassword: null
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Cuba Ticket
+
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.utilities
+  icon: assets/icon.icns
+
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Office
+  icon: assets/icon.png
